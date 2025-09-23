@@ -1,0 +1,79 @@
+.root-pane {
+    -fx-background-image: url("https://badgersfrommars.com/cdn/shop/files/teal.jpg?v=1663912606&width=1500");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.deck-status-label {
+    -fx-text-fill: #222;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-border-radius: 5px;
+}
+
+.hand-box {
+    -fx-background-color: rgba(255,255,255,0.8);
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+}
+
+.card-image {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 3);
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+}
+
+.card-image:disabled {
+    -fx-opacity: 0.4;
+}
+
+.card-image.sin-poder {
+    -fx-effect: innershadow(gaussian, darkred, 8, 0.5, 0, 0);
+}
+
+.card-image:hover {
+    -fx-translate-y: -10px;
+}
+
+.card-sel {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 3);
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-opacity: 0.8;
+}
+
+.enemy-card {
+    -fx-effect: dropshadow(gaussian, rgba(255,0,0,0.5), 8, 0, 0, 3);
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.action-button, .menu-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.action-button:hover, .menu-button:hover {
+    -fx-background-color: gray;
+}
+
+.enemy-health-label {
+    -fx-text-fill: #800000;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.enemy-attack-label {
+    -fx-text-fill: black;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}

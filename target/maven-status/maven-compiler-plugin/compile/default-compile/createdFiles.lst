@@ -1,0 +1,12 @@
+Modelo\Baraja.class
+Controlador\Main.class
+Modelo\Carta.class
+Modelo\CartaBase.class
+module-info.class
+Modelo\CartaEnemigo.class
+Utilidades\Guardado.class
+Controlador\ControladorInicio.class
+Controlador\ControladorJuego.class
+Utilidades\CartaDeserializable.class
+Modelo\CartaPueblo.class
+Modelo\Juego.class

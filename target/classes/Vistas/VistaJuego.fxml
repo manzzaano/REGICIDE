@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="705" prefWidth="1500" styleClass="root-pane" stylesheets="@StylesJuego.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorJuego">
+
+    <Label fx:id="estadoMazos" layoutX="71.0" layoutY="211.0" prefHeight="142" prefWidth="248" styleClass="deck-status-label" text="" />
+
+    <HBox fx:id="mano" layoutX="355" layoutY="528" prefHeight="162" prefWidth="756" spacing="10" styleClass="hand-box">
+        <children>
+            <ImageView fx:id="carta1" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta2" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta3" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta4" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta5" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta6" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta7" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="carta8" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+        </children>
+    </HBox>
+
+    <ImageView fx:id="cartaEnemigo" fitHeight="280" fitWidth="200" layoutX="668" layoutY="119" preserveRatio="true" styleClass="enemy-card" />
+
+    <Label fx:id="vidaEnemigo" layoutX="465" layoutY="204" prefHeight="130" prefWidth="200" styleClass="enemy-health-label" textAlignment="CENTER" />
+
+    <Label fx:id="ataqueEnemigo" layoutX="868" layoutY="204" prefHeight="130" prefWidth="200" styleClass="enemy-attack-label" textAlignment="CENTER" />
+
+    <Button fx:id="confirmarAtaque" layoutX="785" layoutY="433" onAction="#ataque" styleClass="action-button" text="Confirmar Ataque" />
+
+    <Button fx:id="confirmarDefensa" layoutX="579" layoutY="433" onAction="#defensa" styleClass="action-button" text="Confirmar Defensa" />
+
+    <Button fx:id="guardarPartida" layoutX="589.0" layoutY="23.0" onAction="#guardarPartida" styleClass="menu-button" text="Guardar Partida" />
+
+    <Button fx:id="cargarPartida" layoutX="395.0" layoutY="23.0" onAction="#cargarPartida" styleClass="menu-button" text="Cargar Partida" />
+
+    <Button fx:id="verEstadisticas" layoutX="808.0" layoutY="23.0" onAction="#mostrarEstadisticas" styleClass="menu-button" text="Estadísticas" />
+
+    <HBox layoutX="71" layoutY="529" prefHeight="162" prefWidth="200" spacing="10" styleClass="hand-box">
+        <children>
+            <ImageView fx:id="comodin1" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+            <ImageView fx:id="comodin2" fitHeight="130" fitWidth="90" preserveRatio="true" styleClass="card-image" />
+        </children>
+    </HBox>
+    <Button fx:id="nuevaPartida" layoutX="998.0" layoutY="23.0" onAction="#nuevaPartida" styleClass="menu-button" text="Nueva Partida" />
+    <Button fx:id="cancelarCombi" layoutX="1246.0" layoutY="587.0" onAction="#cancelarCombinacion" styleClass="menu-button" text="Cancelar Selección" />
+    <VBox layoutX="1125.0" layoutY="182.0" prefHeight="178.0" prefWidth="200.0" styleClass="hand-box">
+        <children>
+            <HBox prefHeight="89.0" prefWidth="284.0">
+                <children>
+                    <ImageView fx:id="sel1" fitHeight="89.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel2" fitHeight="89.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel3" fitHeight="89.0" fitWidth="71.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel4" fitHeight="89.0" fitWidth="71.0" layoutX="81.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="366.0" prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <ImageView fx:id="sel5" fitHeight="89.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel6" fitHeight="89.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel7" fitHeight="89.0" fitWidth="71.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                    <ImageView fx:id="sel8" fitHeight="89.0" fitWidth="71.0" layoutX="81.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="card-sel" />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+
+</AnchorPane>

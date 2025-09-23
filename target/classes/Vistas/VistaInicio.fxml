@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:controller="Controlador.ControladorInicio"
+           stylesheets="@StylesInicio.css"
+           styleClass="root-pane"
+           prefWidth="600" prefHeight="400"
+           xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1">
+
+   <VBox alignment="CENTER" spacing="20">
+      <Label text="BIENVENIDO A REGICIDE - MODO SOLITARIO"/>
+      <TextField fx:id="nombreJugador"
+                 promptText="Introduce tu nombre"
+                 style="-fx-max-width:250"
+                 alignment="CENTER"/>
+      <HBox alignment="CENTER" spacing="10">
+         <Button text="¿Cómo jugar?" onAction="#abrirReglas"/>
+         <Button text="Jugar" onAction="#validarNombreJugador"/>
+      </HBox>
+   </VBox>
+
+</StackPane>
