@@ -15,7 +15,7 @@ Proyecto final de la asignatura de **Programación**. Se trata de una adaptació
 - CSV (para estadísticas)  
 
 ## ▶️ Ejecución
-Clona este repositorio y ejecuta el proyecto desde tu IDE con soporte para JavaFX.  
+Clona este repositorio y ejecuta el proyecto desde tu IDE con soporte para JavaFX. El IDE que he utilizado es IntelliJ IDEA (Versión Comunnity). 
 
 ## 📖 Aprendizajes
 Este proyecto me permitió reforzar conocimientos en:
